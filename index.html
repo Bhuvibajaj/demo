@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    #p2{
+        display:none;
+    }
+</style>
+<body>
+    <p id="p1">what is the color of an apple</p>
+    <button onclick="test()">show answer</button>
+    <button onclick="fun()">hide answer</button>
+    <p id="p2">red</p>
+</body>
+<script>
+    function fun(){
+        var a=document.getElementById("p2")
+        a.style.display = "none"
+    }
+        
+    function test(){
+        var b=document.getElementById("p2")
+        b.style.display = "block"
+    }
+</script>
+</html>
